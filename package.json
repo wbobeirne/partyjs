@@ -1,0 +1,27 @@
+{
+  "name": "party-js",
+  "version": "1.0.0",
+  "description": "Turn any element in to a total rager",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "test": "test"
+  },
+  "keywords": [
+    "party",
+    "confetti",
+    "canvas",
+    "balloons",
+    "fun"
+  ],
+  "author": "wbobeirne",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-latest": "6.22.0",
+    "babel-preset-stage-3": "6.22.0",
+    "webpack": "^2.2.1"
+  }
+}
