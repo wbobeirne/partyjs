@@ -8,9 +8,6 @@ module.exports = {
     rules: [{
       test: /\.js$/,
       loader: "babel-loader",
-      options: {
-        presets: ["latest", "stage-3"],
-      }
     }],
   },
 };

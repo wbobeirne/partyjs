@@ -9,6 +9,7 @@ class PartyEntity {
    * @param {integer} params.bounds.left
    * @param {integer} params.bounds.bottom
    * @param {integer} params.bounds.right
+   * @constructor
    */
 	constructor(params = {}) {
     this.bounds = params.bounds || {

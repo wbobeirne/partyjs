@@ -1,14 +1,14 @@
 class Vector2 {
 	/**
    * Represents a 2 dimensional coordinate
-   * @constructor
    * @param {int} x - X coordinate
    * @param {int} y - Y coordinate
+   * @constructor
    */
 	constructor(x = 0, y = 0) {
 		this.x = x;
 		this.y = y;
-  },
+  }
 
 	/**
    * Returns the length of the vector
@@ -16,7 +16,7 @@ class Vector2 {
    */
 	length() {
 		return Math.sqrt(this.sqrLength());
-  },
+  }
 
   /**
    * Returns the length of the vector, pre-square rooting
@@ -24,7 +24,7 @@ class Vector2 {
    */
 	sqrLength() {
 		return (this.x * this.x) + (this.y * this.y);
-  },
+  }
 
 
 	/**
@@ -34,7 +34,7 @@ class Vector2 {
    */
 	equals(vec) {
 		return this.x === vec.x && this.y === vec.y;
-  },
+  }
 
   /**
    * Add another vector to this one.
@@ -45,7 +45,7 @@ class Vector2 {
 		this.x += vec.x;
 		this.y += vec.y;
 		return this;
-  },
+  }
 
   /**
    * Subtract a vector from this one.
@@ -56,7 +56,7 @@ class Vector2 {
 		this.x -= vec.x;
 		this.y -= vec.y;
 		return this;
-  },
+  }
 
   /**
    * Divide this vector by some divisor.
@@ -67,7 +67,7 @@ class Vector2 {
 		this.x /= div;
 		this.y /= div;
 		return this;
-  },
+  }
 
   /**
    * Multiply this vector by some multiplier.
@@ -78,14 +78,13 @@ class Vector2 {
 		this.x *= mul;
 		this.y *= mul;
 		return this;
-  },
+  }
 
 
   /**
    * Normalize the vector.
    * @returns {Vector2} this
    */
-	# Normalize this vector
 	normalize() {
 		const sqrLen = this.sqrLength();
 
@@ -93,26 +92,26 @@ class Vector2 {
 			factor = 1.0 / Math.sqrt(sqrLen);
 			this.x *= factor;
 			this.y *= factor;
-    },
+    }
 
 		return this;
-  },
+  }
 
 	/**
    * Return a different normalized version of the vector.
    * @returns {Vector2} new normalized vector
    */
 	normalized() {
-		const sqrLen = @sqrLength();
+		const sqrLen = this.sqrLength();
 
 		if (sqrLen) {
 			const factor = 1.0 / Math.sqrt(sqrLen);
-			return new Vector2(@x * factor, @y * factor);
+			return new Vector2(this.x * factor, this.y * factor);
     }
     else {
       return new Vector2(1, 1);
     }
-  },
+  }
 }
 
 export default Vector2;

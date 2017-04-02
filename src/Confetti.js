@@ -1,3 +1,5 @@
+import PartyEntity from "./PartyEntity";
+import Vector2 from "./Vector2";
 import { DEG_TO_RAD } from "./constants";
 
 const DEFAULT_CONFIG = {

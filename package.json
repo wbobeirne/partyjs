@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "test": "test"
+    "test": "test",
+    "jsdoc": "jsdoc src -c jsdoc.conf -r -d docs"
   },
   "keywords": [
     "party",
@@ -22,6 +23,8 @@
     "babel-loader": "^6.3.2",
     "babel-preset-latest": "6.22.0",
     "babel-preset-stage-3": "6.22.0",
+    "jsdoc": "^3.4.3",
+    "jsdoc-babel": "^0.3.0",
     "webpack": "^2.2.1"
   }
 }

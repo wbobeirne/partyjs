@@ -1,4 +1,6 @@
 import PartyEntity from "./PartyEntity";
+import EulerMass from "./EulerMass";
+import Vector2 from "./Vector2";
 
 const DEFAULT_PARAMS = {
   pieces: 30,

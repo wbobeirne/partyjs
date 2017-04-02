@@ -1,13 +1,14 @@
 import Vector2 from "./Vector2";
 
+/**
+ * Represents an object that adheres to Euler's laws of motion
+ * @param {Number} x - X position
+ * @param {Number} y - Y position
+ * @param {Number} mass - The weight of the object
+ * @param {Number} drag - The friction of the object
+ * @class
+ */
 class EulerMass {
-  /**
-   * Represents an object that adheres to Euler's laws of motion
-   * @param {Number} x - X position
-   * @param {Number} y - Y position
-   * @param {Number} mass - The weight of the object
-   * @param {Number} drag - The friction of the object
-   */
 	constructor(x, y, mass, drag) {
 		this.pos = new Vector2(0, 0);
 		this.pos.x = x;
@@ -16,7 +17,7 @@ class EulerMass {
 		this.drag = drag;
 		this.force = new Vector2(0, 0);
 		this.velocity = new Vector2(0, 0);
-  },
+  }
 
 	/**
    * Add some amount of force to the mass.
@@ -26,7 +27,7 @@ class EulerMass {
 	addForce(f) {
 		this.force.add(f);
 		return this;
-  },
+  }
 
 
   /**
@@ -48,7 +49,7 @@ class EulerMass {
 		this.force = new Vector2(0, 0);
 
 		return this;
-  },
+  }
 
   /**
    * Get the current force of the mass
@@ -63,7 +64,7 @@ class EulerMass {
 		totalForce.subtract(dragVel);
 
 		return totalForce
-  },
+  }
 }
 
 export default EulerMass;

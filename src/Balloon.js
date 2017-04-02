@@ -1,4 +1,5 @@
 import PartyEntity from "./PartyEntity";
+import Vector2 from "./Vector2";
 
 const DEFAULT_CONFIG = {
   width: 80,
